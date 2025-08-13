@@ -10,6 +10,7 @@ vector<int>ans;
 int indegree[max];
 int n;
 
+//logic for bfs
 void bfs(){
     queue<int>q;
     for(int i=0;i<n;i++){
@@ -30,10 +31,13 @@ void bfs(){
     }
 
 }
+
 int main(){
 
     int e,x,y;
     cin>>n>>e;
+    
+    //logic for special case
     if(n<0 || n>=max){
         cout<<"Invalid input"<<endl;
         return 1;
@@ -45,6 +49,7 @@ int main(){
     while(e--){
         cin>>x>>y;
 
+        //logic for special case
         if(x<0 || x>=n || y<0 || y>=n){
             cout<<"Invalid input"<<endl;
             return 1;
@@ -69,3 +74,4 @@ int main(){
     return 0;
 
 }
+
