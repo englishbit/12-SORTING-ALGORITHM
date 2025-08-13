@@ -60,6 +60,7 @@ int main(){
 
     bfs();
 
+    //logic for output
     if(n!=ans.size()){
         cout<<"Cycle exist"<<endl;
         return 1;
@@ -74,4 +75,5 @@ int main(){
     return 0;
 
 }
+
 
