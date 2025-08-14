@@ -29,7 +29,8 @@ int main(){
             }
 
         }
-       
+
+        //logic for output
         for(int j=0;j<n;j++){
             printf("%d ",arr[j]);
         }
@@ -37,3 +38,4 @@ int main(){
         
     return 0;
 }
+
